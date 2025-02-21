@@ -25,7 +25,7 @@ app.use(express.json()) //definindo o padrão das requests para json no express
         const {name, price} = request.body
 
         //reponse.send(`Produto ${name} custa $ ${price}`)
-        response.status(201).json({name, price}) //devolver resposta em formato json sem a necessidade de converter com stringfy e tb colocar o status code para retornar na mesma linha
+        response.status(201).json({name, price, user_id: request.user_id}) //devolver resposta em formato json sem a necessidade de converter com stringfy e tb colocar o status code para retornar na mesma linha
     })
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
