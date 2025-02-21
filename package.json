@@ -10,8 +10,12 @@
   "type": "module",
   "description": "Criando uma API REST com Node.js",
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/node": "^20.14.12",
     "tsx": "^4.16.2",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }
